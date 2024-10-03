@@ -403,29 +403,6 @@
         </div>
         <div class="setting-wrapper">
           <div class="setting-title">
-            其它
-          </div>
-          <div class="setting-item">
-            <el-tag
-              type="info"
-              :effect="isNight ? 'dark' : 'light'"
-              class="setting-btn"
-              @click="showMPCode"
-            >
-              关注公众号【假装大佬】
-            </el-tag>
-            <el-tag
-              type="info"
-              :effect="isNight ? 'dark' : 'light'"
-              class="setting-btn"
-              @click="joinTGChannel"
-            >
-              加入TG频道【假装大佬】
-            </el-tag>
-          </div>
-        </div>
-        <div class="setting-wrapper">
-          <div class="setting-title">
             本地缓存
             <span class="right-text">{{ localCacheStats.total }}</span>
           </div>
@@ -470,16 +447,6 @@
         </div>
       </div>
       <div class="bottom-icons">
-        <a href="https://github.com/hectorqin/reader" target="_blank">
-          <div class="bottom-icon">
-            <img
-              v-if="isNight"
-              :src="require('../assets/imgs/github.png')"
-              alt=""
-            />
-            <img v-else :src="require('../assets/imgs/github2.png')" alt="" />
-          </div>
-        </a>
         <span
           class="theme-item"
           :style="themeColor"
